@@ -4,7 +4,6 @@
   "description": "test prettier with eslint",
   "private": true,
   "scripts": {
-    "precommit": "lint-staged",
     "eslint": "node_modules/.bin/eslint src/"
   },
   "keywords": [],
