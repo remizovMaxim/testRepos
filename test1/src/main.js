@@ -10,7 +10,8 @@ function summer() {
   myFam = 'Corse';
   res = myConcat(myName, myFam);
 }
-
+console.log('gggg');
+//kek
 function summerOutem() {
   myName = 'Michel';
   myFam = 'Corse';
