@@ -1,5 +1,6 @@
 let myName = 'Maxim';
 let myFam = 'Remizov';
+let newVarNum = 1234;
 function myConcat(a, b) {
   return a + ' ' + b;
 }
