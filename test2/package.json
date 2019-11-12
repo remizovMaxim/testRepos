@@ -1,16 +1,31 @@
 {
   "name": "test2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "node_modules/.bin/eslint src/"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "node_modules/.bin/eslint --max-warnings=0",
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
     "prettier": "^1.19.1"
   }
 }

@@ -1,17 +1,11 @@
 {
-    "parserOptions": {
-        "ecmaVersion": 6
-    },
-    "extends": [
-      "prettier"
-    ],
-    "rules": {
-      "jsx-quotes": [
-        1,
-        "prefer-double"
-      ]
-    },
-    "plugins": [
-      "prettier"
-    ]
-  }
+  "extends": [
+    "airbnb"
+  ],
+  "rules": {
+    "linebreak-style": "off"  
+  },
+  "plugins": [
+    "prettier"
+  ]
+}
